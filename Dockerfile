@@ -1,4 +1,4 @@
-FROM jfloff/alpine-python:3.7-onbuild
+FROM jfloff/alpine-python:3.7-slim
 
 LABEL maintainer="frederic.t.chan@gmail.com"
 
