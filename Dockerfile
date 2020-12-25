@@ -41,12 +41,12 @@ RUN chmod +x /start.sh \
     && touch /root/.aria2/aria2.session
 
 RUN pip3 install pipenv \
-    && pipenv install --system --deploy --ignore-pipfile 
+    && pipenv install --system --deploy 
 
 # install Python dependencies
 RUN cd /file_vacuum \
     && pip3 install pipenv \
-    && pipenv install --deploy --ignore-pipfile \
+    && pipenv install --deploy \
     && pipenv sync --python /usr/bin/python3
 
 EXPOSE 80
