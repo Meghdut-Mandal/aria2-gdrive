@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM jfloff/alpine-python:3.7-onbuild
 
 LABEL maintainer="frederic.t.chan@gmail.com"
 
@@ -7,7 +7,7 @@ ENV ARIA2_RPC_TLS=false
 ENV PIPENV_VENV_IN_PROJECT 1
 
 RUN apk update \
-    && apk add --no-cache bash aria2 nginx curl fuse py3-pip\
+    && apk add --no-cache bash aria2 nginx curl fuse \
     && wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip \
     && unzip master.zip \
     && rm -rf master.zip \
