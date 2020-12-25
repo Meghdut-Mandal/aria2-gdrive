@@ -40,6 +40,9 @@ RUN chmod +x /start.sh \
     && chmod +x /update_trackers.sh \
     && touch /root/.aria2/aria2.session
 
+RUN pip3 install pipenv \
+    && pipenv install --system --deploy --ignore-pipfile 
+
 # install Python dependencies
 RUN cd /file_vacuum \
     && pip3 install pipenv \
