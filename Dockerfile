@@ -7,7 +7,7 @@ ENV ARIA2_RPC_TLS=false
 ENV PIPENV_VENV_IN_PROJECT 1
 
 RUN apk update \
-    && apk add --no-cache bash aria2 nginx curl fuse python3\
+    && apk add --no-cache bash aria2 nginx curl fuse py3-pip\
     && wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip \
     && unzip master.zip \
     && rm -rf master.zip \
