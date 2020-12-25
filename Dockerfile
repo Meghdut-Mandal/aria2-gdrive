@@ -31,7 +31,7 @@ ADD files/start.sh /start.sh
 ADD files/rclone_upload.sh /rclone_upload.sh
 ADD files/update_trackers.sh /update_trackers.sh
 ADD files/file_vacuum /file_vacuum
-ADD Pipfile.lock /file_vacuum/Pipfile.lock
+# ADD Pipfile.lock /file_vacuum/Pipfile.lock
 ADD Pipfile /file_vacuum/Pipfile
 
 # make sh executable and create session file
