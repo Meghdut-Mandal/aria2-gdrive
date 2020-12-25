@@ -46,8 +46,8 @@ RUN pip3 install pipenv \
 # install Python dependencies
 RUN cd /file_vacuum \
     && pip3 install pipenv \
-    && pipenv install --deploy \
-    && pipenv sync --python /usr/bin/python3
+    && pipenv install --deploy 
+
 
 EXPOSE 80
 EXPOSE 6800
