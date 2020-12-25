@@ -42,7 +42,7 @@ RUN chmod +x /start.sh \
 
 # install Python dependencies
 RUN cd /file_vacuum \
-    && pip3 install --system pipenv \
+    && pip3 install pipenv \
     && pipenv install --deploy --ignore-pipfile \
     && pipenv sync --python /usr/bin/python3
 
